@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark light;
+  background: #050607;
+  color: #f7f5ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  margin: 0;
+  background: #050607;
+  color: #f7f5ef;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #ffffff;
+  color: #080808;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.grid-field {
+  background-image:
+    linear-gradient(rgba(8, 8, 8, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 8, 8, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.dark-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+.radial-spotlight {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1), transparent 28rem),
+    radial-gradient(circle at 80% 0%, rgba(212, 212, 216, 0.08), transparent 30rem),
+    radial-gradient(circle at 70% 80%, rgba(120, 120, 128, 0.08), transparent 34rem);
+}
+
+.editorial-noise {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.06), transparent 38%),
+    linear-gradient(300deg, rgba(148, 148, 148, 0.06), transparent 42%);
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+}
+
+.hardware-trace {
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0 1px, transparent 1px),
+    linear-gradient(180deg, rgba(148, 148, 148, 0.22) 0 1px, transparent 1px);
+  background-size: 72px 72px;
+}
